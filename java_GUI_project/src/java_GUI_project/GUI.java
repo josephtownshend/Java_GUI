@@ -48,7 +48,6 @@ public class GUI implements ActionListener{
 
     panel.add(upButton);
     panel.add(downButton);
-
     panel.add(label);
 
     frame.add(panel, BorderLayout.CENTER); // add panel to frame
@@ -63,14 +62,22 @@ public class GUI implements ActionListener{
     new GUI();
   }
 
+
+  /**
+   * Increments the counter on each button click and displays
+   * the new value.
+   * @param event information about the button click
+   */
   @Override
   public void actionPerformed(ActionEvent event) {
     if (event.getSource() == upButton) {
       count++;
       label.setText("Number of clicks: " + count);
-    } else {
+    } else if (event.getSource() == downButton && count > 0) {
       count--;
       label.setText("Number of clicks: " + count);
+    } else {
+      return;
     }
 
   }
