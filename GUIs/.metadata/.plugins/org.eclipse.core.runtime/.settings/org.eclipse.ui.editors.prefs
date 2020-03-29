@@ -1,0 +1,10 @@
+additionIndicationColor=0,255,0
+changeIndicationColor=0,128,255
+deletionIndicationColor=128,0,0
+eclipse.preferences.version=1
+lineNumberRuler=true
+quickdiff.defaultProvider=org.tigris.subversion.subclipse.quickdiff.providers.SVNReferenceProvider
+searchResultHighlighting=true
+searchResultIndication=false
+spacesForTabs=true
+tabWidth=2

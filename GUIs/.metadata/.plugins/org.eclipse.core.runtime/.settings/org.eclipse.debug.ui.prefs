@@ -1,0 +1,5 @@
+Console.highWaterMark=8008000
+Console.lowWaterMark=8000000
+DEBUG.consoleOpenOnOut=false
+eclipse.preferences.version=1
+org.eclipse.debug.ui.RelaunchAndTerminateLaunchAction=true

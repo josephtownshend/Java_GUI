@@ -1,0 +1,9 @@
+autoResolve.change=true
+autoResolve.close=false
+eclipse.preferences.version=1
+ivuUserDir=${user_home}/.im/cache
+ivy_conf_path=${eclipse_home}/alfa/ivysettings.xml
+offline=REMOVE_PREFERENCE_MARKER
+resolveInWorkspace=true
+retrievedClasspath.pattern=lib/[type]s/[artifact]-[revision].[ext]
+retrievedClasspath.types=*
