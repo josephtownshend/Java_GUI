@@ -11,6 +11,16 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * A simple Swing program that creates a window with a button.
+ * The button updates a counter each time it is clicked. There is a label
+ * that displays the counter value.
+ *
+ * @author Joseph Townshend
+ * @version Mar 29, 2020
+ *
+ */
+
 public class GUI implements ActionListener{
 
   private int count = 0;
