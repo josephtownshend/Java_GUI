@@ -16,22 +16,29 @@ public class GUI implements ActionListener{
   private int count = 0;
   private final JLabel label;
   private final JFrame frame;
-  private final JButton button;
+  private final JButton upButton;
+  private final JButton downButton;
   private final JPanel panel;
 
   public GUI() {
 
     frame = new JFrame();
 
-    button = new JButton("Click me");
-    button.addActionListener(this);
+    upButton = new JButton("Up");
+    upButton.addActionListener(this);
+
+    downButton = new JButton("Down");
+    downButton.addActionListener(this);
 
     label = new JLabel("Number of clicks: 0");
 
     panel = new JPanel();
     panel.setBorder(BorderFactory.createEmptyBorder(30, 30 , 10 , 30));
     panel.setLayout(new GridLayout(0, 1));
-    panel.add(button);
+
+    panel.add(upButton);
+    panel.add(downButton);
+
     panel.add(label);
 
     frame.add(panel, BorderLayout.CENTER); // add panel to frame
@@ -47,9 +54,15 @@ public class GUI implements ActionListener{
   }
 
   @Override
-  public void actionPerformed(ActionEvent e) {
-    count++;
-    label.setText("Number of clicks: " + count);
+  public void actionPerformed(ActionEvent event) {
+    if (event.getSource() == upButton) {
+      count++;
+      label.setText("Number of clicks: " + count);
+    } else {
+      count--;
+      label.setText("Number of clicks: " + count);
+    }
+
   }
 
 }
