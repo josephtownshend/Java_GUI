@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 /**
  * A simple Swing program that creates a window with a button.
@@ -40,11 +41,11 @@ public class GUI implements ActionListener{
     downButton = new JButton("Down");
     downButton.addActionListener(this);
 
-    label = new JLabel("Number of clicks: 0");
+    label = new JLabel("Number of clicks: 0", SwingConstants.CENTER);
 
     panel = new JPanel();
     panel.setBorder(BorderFactory.createEmptyBorder(30, 30 , 10 , 30));
-    panel.setLayout(new GridLayout(0, 1));
+    panel.setLayout(new GridLayout(2, 1));
 
     panel.add(upButton);
     panel.add(downButton);
@@ -81,6 +82,5 @@ public class GUI implements ActionListener{
     }
 
   }
-
 }
 
